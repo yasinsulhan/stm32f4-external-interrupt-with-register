@@ -3,6 +3,8 @@ The interrupt is a signal emitted by hardware or software when a process or an e
 
 In this project, PA0, PA1, PA2 pins belonging stm32f407 device are assigned as external interrupt. Each pin represents **EXTI0**, **EXTI1**, **EXTI2** respectively and these external interrupt have priority each other according to vector table below. Order of priority is inversely proportional to the magnitude of the priority. Also the push buttons are connected PA1 and PA2 pins. When the push buttons are pushed, The leds on D port ligh up according to priority of external interrupts (PA0, PA1, PA2). 
 
+![priority](https://github.com/yasinsulhan/readme/assets/109728194/f1af3c35-46b9-48cb-b7a0-4987998cba4a)
+
 ### GPIO Configuration
 Fistly, **Port A and D point AHB1 clock** in stm32f407 block diagram. So, AHB1 clock must be enabled for Port A and D by using RCC register.
 
