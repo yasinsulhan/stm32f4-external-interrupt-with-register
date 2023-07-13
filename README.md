@@ -1,5 +1,5 @@
 # INTERRUPT with REGISTER
-The interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention. It alerts the processor to a high-priority process requiring interruption of the current working process. In I/O devices one of the bus control lines is dedicated for this purpose and is called the Interrupt Service Routine (ISR).
+The interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention. It alerts the processor to a high-priority process requiring interruption of the current working process. In I/O devices one of the bus control lines is dedicated for this purpose and is called the Interrupt Service Routine (ISR). [Also the link exlains interrupts in detailed.](https://www.geeksforgeeks.org/interrupts/)
 
 In this project, PA0, PA1, PA2 pins belonging stm32f407 device are assigned as external interrupt. Each pin represents **EXTI0**, **EXTI1**, **EXTI2** respectively and these external interrupt have priority each other according to vector table below. Order of priority is inversely proportional to the magnitude of the priority. Also the push buttons are connected PA1 and PA2 pins. When the push buttons are pushed, The leds on D port ligh up according to priority of external interrupts (PA0, PA1, PA2). 
 
